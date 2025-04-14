@@ -6,6 +6,32 @@
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:400,800,300,600,700);
 @import url(http://fonts.googleapis.com/css?family=Abel);
 
+/* Ẩn banner trên cùng và logo Google */
+.goog-te-banner-frame.skiptranslate,
+.goog-logo-link,
+.goog-te-gadget {
+  display: none !important;
+}
+
+/* Ẩn viền xám dưới chân trang do Google thêm */
+body {
+  top: 0px !important;
+}
+
+/* Ẩn ngôn ngữ mặc định hiện ở góc */
+#goog-gt-tt, .goog-te-balloon-frame {
+  display: none !important;
+}
+
+/* Ẩn dropdown mặc định */
+#google_translate_element {
+  display: none;
+}
+/* Ẩn thông báo bảo mật của Google Translate */
+#goog-gt-tt {
+  display: none !important;
+}
+
 body {
   font-family: 'Roboto', sans-serif;
   background:;
@@ -266,6 +292,11 @@ a#scrollUp i{
   background-image: url(../images/home/searchicon.png);
   background-repeat: no-repeat;
   background-position: 130px;
+}
+
+.logo img {
+  height: 139px;
+  width: auto;
 }
 
 
@@ -2520,4 +2551,35 @@ h2.title {
   color: #FE980F;
 }
 
+/* Định dạng giá khuyến mãi */
+.old-price {
+  text-decoration: line-through;
+  color: #999;
+  margin-left: 10px;
+  font-size: 0.9em;
+}
 
+/* Định dạng đánh giá sản phẩm */
+.rating i {
+  color: #f1c40f; /* Màu vàng cho sao */
+  margin-right: 2px;
+}
+.rating {
+  font-size: 14px;
+  margin-left: 10px;
+}
+
+/* Định dạng số lượng sản phẩm */
+.product-quantity {
+  margin: 10px 0;
+}
+.product-quantity label {
+  margin-right: 10px;
+  font-weight: bold;
+}
+.product-quantity input {
+  width: 60px;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
